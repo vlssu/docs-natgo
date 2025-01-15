@@ -4798,9 +4798,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@easyops-cn/docusaurus-search-local@npm:^0.40.1":
-  version: 0.40.1
-  resolution: "@easyops-cn/docusaurus-search-local@npm:0.40.1"
+"@easyops-cn/docusaurus-search-local@npm:^0.48.0":
+  version: 0.48.0
+  resolution: "@easyops-cn/docusaurus-search-local@npm:0.48.0"
   dependencies:
     "@docusaurus/plugin-content-docs": "npm:^2 || ^3"
     "@docusaurus/theme-translations": "npm:^2 || ^3"
@@ -4809,8 +4809,9 @@ __metadata:
     "@docusaurus/utils-validation": "npm:^2 || ^3"
     "@easyops-cn/autocomplete.js": "npm:^0.38.1"
     "@node-rs/jieba": "npm:^1.6.0"
-    cheerio: "npm:^1.0.0-rc.3"
-    clsx: "npm:^1.1.1"
+    cheerio: "npm:^1.0.0"
+    clsx: "npm:^2.1.1"
+    comlink: "npm:^4.4.2"
     debug: "npm:^4.2.0"
     fs-extra: "npm:^10.0.0"
     klaw-sync: "npm:^6.0.0"
@@ -4820,9 +4821,9 @@ __metadata:
     tslib: "npm:^2.4.0"
   peerDependencies:
     "@docusaurus/theme-common": ^2 || ^3
-    react: ^16.14.0 || ^17 || ^18
-    react-dom: ^16.14.0 || 17 || ^18
-  checksum: 10c0/7b0c14a8e5578e3da0f787534dc37211fc3ad1d02acf1357350462ff2147039449fabc3179a2c1d319f2476f8e4e4da19ce75c4bbb34ac7cb3d48842ff7f5a4c
+    react: ^16.14.0 || ^17 || ^18 || ^19
+    react-dom: ^16.14.0 || 17 || ^18 || ^19
+  checksum: 10c0/86e722582c38a5943c5af5cae1d80aa62a370d863a034804e1b192d0b8bcaa50fb001b64163bc7f50f7c91c5973b4279c38ec66a63332ef0e30cb3af45a96037
   languageName: node
   linkType: hard
 
@@ -7138,7 +7139,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cheerio@npm:^1.0.0-rc.12, cheerio@npm:^1.0.0-rc.3":
+"cheerio@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "cheerio@npm:1.0.0"
+  dependencies:
+    cheerio-select: "npm:^2.1.0"
+    dom-serializer: "npm:^2.0.0"
+    domhandler: "npm:^5.0.3"
+    domutils: "npm:^3.1.0"
+    encoding-sniffer: "npm:^0.2.0"
+    htmlparser2: "npm:^9.1.0"
+    parse5: "npm:^7.1.2"
+    parse5-htmlparser2-tree-adapter: "npm:^7.0.0"
+    parse5-parser-stream: "npm:^7.1.2"
+    undici: "npm:^6.19.5"
+    whatwg-mimetype: "npm:^4.0.0"
+  checksum: 10c0/d0e16925d9c36c879edfaef1c0244c866375a4c7b8d6ccd7ae0ad42da7d26263ea1a3c17b9a1aa5965918deeff2d40ac2e7223824f8e6eca972df3b81316a09f
+  languageName: node
+  linkType: hard
+
+"cheerio@npm:^1.0.0-rc.12":
   version: 1.0.0-rc.12
   resolution: "cheerio@npm:1.0.0-rc.12"
   dependencies:
@@ -7249,13 +7269,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clsx@npm:^1.1.1":
-  version: 1.2.1
-  resolution: "clsx@npm:1.2.1"
-  checksum: 10c0/34dead8bee24f5e96f6e7937d711978380647e936a22e76380290e35486afd8634966ce300fc4b74a32f3762c7d4c0303f442c3e259f4ce02374eb0c82834f27
-  languageName: node
-  linkType: hard
-
 "clsx@npm:^2.0.0":
   version: 2.1.0
   resolution: "clsx@npm:2.1.0"
@@ -7327,6 +7340,13 @@ __metadata:
   version: 1.2.0
   resolution: "combine-promises@npm:1.2.0"
   checksum: 10c0/906ebf056006eff93c11548df0415053b6756145dae1f5a89579e743cb15fceeb0604555791321db4fba5072aa39bb4de6547e9cdf14589fe949b33d1613422c
+  languageName: node
+  linkType: hard
+
+"comlink@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "comlink@npm:4.4.2"
+  checksum: 10c0/38aa1f455cf08e94aaa8fc494fd203cc0ef02ece6c21404b7931ce17567e8a72deacddab98aa5650cfd78332ff24c34610586f6fb27fd19dc77e753ed1980deb
   languageName: node
   linkType: hard
 
@@ -8266,6 +8286,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"domutils@npm:^3.1.0":
+  version: 3.2.2
+  resolution: "domutils@npm:3.2.2"
+  dependencies:
+    dom-serializer: "npm:^2.0.0"
+    domelementtype: "npm:^2.3.0"
+    domhandler: "npm:^5.0.3"
+  checksum: 10c0/47938f473b987ea71cd59e59626eb8666d3aa8feba5266e45527f3b636c7883cca7e582d901531961f742c519d7514636b7973353b648762b2e3bedbf235fada
+  languageName: node
+  linkType: hard
+
 "dot-case@npm:^3.0.4":
   version: 3.0.4
   resolution: "dot-case@npm:3.0.4"
@@ -8362,6 +8393,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"encoding-sniffer@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "encoding-sniffer@npm:0.2.0"
+  dependencies:
+    iconv-lite: "npm:^0.6.3"
+    whatwg-encoding: "npm:^3.1.1"
+  checksum: 10c0/b312e0d67f339bec44e021e5210ee8ee90d7b8f9975eb2c79a36fd467eb07709e88dcf62ee20f62ee0d74a13874307d99557852a2de9b448f1e3fb991fc68257
+  languageName: node
+  linkType: hard
+
 "encoding@npm:^0.1.13":
   version: 0.1.13
   resolution: "encoding@npm:0.1.13"
@@ -8388,7 +8429,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"entities@npm:^4.2.0, entities@npm:^4.4.0":
+"entities@npm:^4.2.0, entities@npm:^4.4.0, entities@npm:^4.5.0":
   version: 4.5.0
   resolution: "entities@npm:4.5.0"
   checksum: 10c0/5b039739f7621f5d1ad996715e53d964035f75ad3b9a4d38c6b3804bb226e282ffeae2443624d8fdd9c47d8e926ae9ac009c54671243f0c3294c26af7cc85250
@@ -9602,6 +9643,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"htmlparser2@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "htmlparser2@npm:9.1.0"
+  dependencies:
+    domelementtype: "npm:^2.3.0"
+    domhandler: "npm:^5.0.3"
+    domutils: "npm:^3.1.0"
+    entities: "npm:^4.5.0"
+  checksum: 10c0/394f6323efc265bbc791d8c0d96bfe95984e0407565248521ab92e2dc7668e5ceeca7bc6ed18d408b9ee3b25032c5743368a4280d280332d782821d5d467ad8f
+  languageName: node
+  linkType: hard
+
 "http-cache-semantics@npm:^4.1.1":
   version: 4.1.1
   resolution: "http-cache-semantics@npm:4.1.1"
@@ -9723,7 +9776,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"iconv-lite@npm:^0.6.2":
+"iconv-lite@npm:0.6.3, iconv-lite@npm:^0.6.2, iconv-lite@npm:^0.6.3":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
   dependencies:
@@ -11734,7 +11787,7 @@ __metadata:
     "@docusaurus/core": "npm:^3.4.0"
     "@docusaurus/module-type-aliases": "npm:3.4.0"
     "@docusaurus/preset-classic": "npm:^3.4.0"
-    "@easyops-cn/docusaurus-search-local": "npm:^0.40.1"
+    "@easyops-cn/docusaurus-search-local": "npm:^0.48.0"
     "@mdx-js/react": "npm:^3.0.1"
     clsx: "npm:^2.1.1"
     prism-react-renderer: "npm:^2.3.1"
@@ -12159,12 +12212,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"parse5-parser-stream@npm:^7.1.2":
+  version: 7.1.2
+  resolution: "parse5-parser-stream@npm:7.1.2"
+  dependencies:
+    parse5: "npm:^7.0.0"
+  checksum: 10c0/e236c61000d38ecad369e725a48506b051cebad8abb00e6d4e8bff7aa85c183820fcb45db1559cc90955bdbbdbd665ea94c41259594e74566fff411478dc7fcb
+  languageName: node
+  linkType: hard
+
 "parse5@npm:^7.0.0":
   version: 7.1.2
   resolution: "parse5@npm:7.1.2"
   dependencies:
     entities: "npm:^4.4.0"
   checksum: 10c0/297d7af8224f4b5cb7f6617ecdae98eeaed7f8cbd78956c42785e230505d5a4f07cef352af10d3006fa5c1544b76b57784d3a22d861ae071bbc460c649482bf4
+  languageName: node
+  linkType: hard
+
+"parse5@npm:^7.1.2":
+  version: 7.2.1
+  resolution: "parse5@npm:7.2.1"
+  dependencies:
+    entities: "npm:^4.5.0"
+  checksum: 10c0/829d37a0c709215a887e410a7118d754f8e1afd7edb529db95bc7bbf8045fb0266a7b67801331d8e8d9d073ea75793624ec27ce9ff3b96862c3b9008f4d68e80
   languageName: node
   linkType: hard
 
@@ -14896,6 +14967,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"undici@npm:^6.19.5":
+  version: 6.21.0
+  resolution: "undici@npm:6.21.0"
+  checksum: 10c0/afa9bde6dcf8e0f5cf1ff2fa977ba73dd5510299ddfca0e1f37ff326554172ae31cb3d4a40b5a729601be1f21b96a2684f974d74dab53f9b6930fd47d1949246
+  languageName: node
+  linkType: hard
+
 "unicode-canonical-property-names-ecmascript@npm:^2.0.0":
   version: 2.0.0
   resolution: "unicode-canonical-property-names-ecmascript@npm:2.0.0"
@@ -15410,6 +15488,22 @@ __metadata:
   version: 0.1.4
   resolution: "websocket-extensions@npm:0.1.4"
   checksum: 10c0/bbc8c233388a0eb8a40786ee2e30d35935cacbfe26ab188b3e020987e85d519c2009fe07cfc37b7f718b85afdba7e54654c9153e6697301f72561bfe429177e0
+  languageName: node
+  linkType: hard
+
+"whatwg-encoding@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "whatwg-encoding@npm:3.1.1"
+  dependencies:
+    iconv-lite: "npm:0.6.3"
+  checksum: 10c0/273b5f441c2f7fda3368a496c3009edbaa5e43b71b09728f90425e7f487e5cef9eb2b846a31bd760dd8077739c26faf6b5ca43a5f24033172b003b72cf61a93e
+  languageName: node
+  linkType: hard
+
+"whatwg-mimetype@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "whatwg-mimetype@npm:4.0.0"
+  checksum: 10c0/a773cdc8126b514d790bdae7052e8bf242970cebd84af62fb2f35a33411e78e981f6c0ab9ed1fe6ec5071b09d5340ac9178e05b52d35a9c4bcf558ba1b1551df
   languageName: node
   linkType: hard
 
